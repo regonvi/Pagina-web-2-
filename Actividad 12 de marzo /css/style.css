@@ -1,0 +1,15 @@
+body{
+    background-color: palevioletred;
+    
+}
+#main {
+    min-height: 300px; 
+    width: 100%; 
+}
+p{
+    color: white;
+}
+#Yo{
+    height: auto; 
+    width: 80%;
+}
