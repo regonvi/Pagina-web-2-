@@ -2,26 +2,79 @@
 <head>
     <meta charset = "utf-8"/>
     <meta http-equiv = "X-UA-Compatible" content = "IE = edge">
-    <title> Presentacion </title>
+    <title> Conociendo CDMX </title>
     <meta name = "viewpoint" content = "width=device width, initial scale = 1">
     <link rel = "stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel = "stylesheet" type = "text/css" media = "screen" href = "../css/style.css">
+    <link rel = "stylesheet" type = "text/css" media = "screen" href = "./css/style.css">
+    <link rel = "icon" href = "./imagenes/CDMX.png">
+    <link href="https://fonts.googleapis.com/css?family=Stint+Ultra+Condensed" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <div id = "main">
-        <h1> Regina Gonzalez</h1>
-        <p> Hola amigos!!</p>
-        <br>
-        <p>Esta es la version 2.0 de mi pagina web</p>
-    </div>
-    <div id = "links">
-        <a href ="../../../about/html/index.html"><img src = "../imgs/img1.jpg" ></a>
-    </div>
-    <img src = "./imgs/img1.jpg" id = "Yo">
+    <header class = "header">
+        <h1>
+            <img id ="logo" src = "./imagenes/ciudad.png">
+        </h1>
+    </header>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <nav class = "navbar">
+        <a href = "#who" > Quien soy </a>
+        <a href = "#services" > Empieza a conocer la CDMX </a> 
+        <a href = "#contact" > Contacto </a>
+    </nav>
 
+    <section class = "content who" id = "who" >
+        <h1 class = "title" > Quienes somos </h1>
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur enim erat, condimentum nec feugiat at, congue vitae lorem. Phasellus id dui maximus, euismod nibh non, vehicula ex. Phasellus a rhoncus sem, et hendrerit augue. Suspendisse auctor porta sem sit amet dapibus. Sed faucibus fringilla nulla. Vivamus tortor magna, vulputate eu dapibus sed, fermentum ut elit. Integer venenatis ut elit ac fermentum. Aenean scelerisque ante elementum, iaculis ipsum non, blandit ex. Nam sem metus, sodales quis aliquam vel, sollicitudin eget sapien. Aliquam ut tortor id justo pretium congue.</p>
+    </section>
+
+    <section class = "content services" id = "services"> 
+        <h2 class = "title" > Services </h2>
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet tincidunt turpis. Aenean aliquam libero at eros iaculis aliquam. Maecenas scelerisque, diam et sollicitudin efficitur, sem ante mattis elit.</p>
+        <ul class = "list-services">
+            <li>
+                <figure>
+                    <a href = "https://viviendoencdmx.wordpress.com/2016/10/27/dia-de-muertos/">
+                        <img src = "./imagenes/angel.jpg">  
+                    </a>
+                    <figcaption> Angel de la Independencia </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                        <a href = "https://viviendoencdmx.wordpress.com/2016/12/20/cambia-tu-rutina/">
+                            <img src = "./imagenes/castillochapu.jpg">  
+                        </a>
+                    <figcaption> Castillo de Chapultepec </figcaption>
+                </figure>
+            </li>
+            <li>
+                    <figure>
+                        <a href = "https://viviendoencdmx.wordpress.com/2016/11/12/el-famosisimo-centro/">
+                            <img src = "./imagenes/bellasartes.jpeg">  
+                        </a>
+                        <figcaption> Bellas Artes </figcaption>
+                    </figure>
+                </li>
+        </ul>
+    </section>
+    <section class = "content contact" id = "contact" >
+        <article class = "contained">
+            <h2 class = "title"> 
+                Mis datos
+            </h2>
+            <ul>
+                <li>
+                    <i style="font-size:24px" class="fa">&#xf1ae;</i>
+                    <p> Regina Gonzalez Vilches</p>
+                </li>
+                <li>
+                    <i style="font-size:24px" class="fa">&#xf003;</i>
+                    <p> regonvi@gmail.com </p>
+                </li>
+            </ul>
+           
+        </article>
+    </section>
 </body>
-</html>

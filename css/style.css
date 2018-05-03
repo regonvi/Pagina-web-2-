@@ -1,15 +1,140 @@
+/*
+  STYLES GUIDE:
+  0. RESET
+  1. LAYOUT
+  2. GENERIC ITEMS
+  3. PARTS OF WEB
+  4. LIST
+  5. FORM
+  5. ANIMATIONS
+  ----------
+  COLORS:
+    color1 => #2c3e50; *GOOGLE PICKER
+    color2 => #34495e;
+    color3 => #3498db;
+    color4 => #fff;
+*/
+/* 0 RESET */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* 1 LAYOUT */
 body{
-    background-color: palevioletred;
+    text-align: center;
+    font: 300 20px/1.7 'Roboto Condensed';
+}
+#logo{
+    margin-top: 10%;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background: url(../imagenes/CDMX.jpeg)no-repeat center top; /*Cambiar foto de cover */
+    background-size: cover;
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.list-services{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.list-services img{
+    width: 45vw; 
+    height: auto;
+
+}
+
+/* 2 GENERIC ITEMS */
+.header{
+    height: 450px; /*Cambiar tamano del fondo */
     
 }
-#main {
-    min-height: 300px; 
-    width: 100%; 
+.navbar{
+    height: 63px;
+    color: palevioletred;
+    background-color: lightblue;
+}
+.navbar a{
+    color: white;
+    padding: 0 20px;
+    text-decoration: none;
+    text-transform: uppercase; /* Mayusculas */
+    font-size: 20px; /* Modiicar tipo de letra */
+}
+.title {
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font: 60px "Stint Ultra Condensed";
 }
 p{
+    margin-bottom: 40px;
+}
+.content{
+    padding: 20px 0;
+
+}
+.who{
+    background-color: #1c9aa5;
     color: white;
 }
-#Yo{
-    height: auto; 
-    width: 80%;
+.who p{
+    max-width: 1055px;
+    margin: 0 auto;
 }
+.services{
+    background-color: lightblue;;
+    color: white;
+}
+.services img{
+    width: 300px;
+    height: auto;
+    margin: 0 30px;
+}
+
+  
